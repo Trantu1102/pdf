@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --error-color: #ea4335;
+    --text-color: #202124;
+    --light-gray: #f1f3f4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Thêm các style khác cho tab và form */
+
+/* Thêm style mới */
+.input-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.drive-input {
+    width: calc(100% - 40px);
+    /* Trừ đi padding */
+    padding: 12px 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    transition: all 0.3s;
+}
+
+.drive-input:focus {
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.5);
+    border-color: #4285f4;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.webhook-btn {
+    flex: 1;
+    padding: 12px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.webhook-btn.secondary {
+    background-color: #34a853;
+}
+
+
+.webhook-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(32, 33, 36, 0.4);
+}
+
+.btn-icon {
+    font-size: 18px;
+}
+
+.status-message {
+    margin-top: 0.5rem;
+}
+
+#webhook3Btn {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(142, 23, 21, 0.15);
+    transition: background 0.2s;
+}
+
+#webhook3Btn:hover {
+    background: #b71c1c;
+}
+
+.result-area {
+    width: calc(100% - 40px);
+    margin-top: 1.2rem;
+    padding: 12px 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #f8f9fa;
+    color: #202124;
+    resize: vertical;
+    min-height: 48px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.08);
+    transition: border 0.2s;
+}
+
+.result-area:focus {
+    outline: none;
+    border-color: #4285f4;
+}
